@@ -1,0 +1,12 @@
+/* pages/mymovie/mymovie.wxss */
+/*上传的图片的样式*/
+.common-img{
+    width:200rpx;
+    height: 100rpx;
+    margin-right: 20rpx;
+}
+.upload .btn-uploada{ /*增加权值进行覆盖唯一接口*/
+    background-color: #fc0;
+    color:#fff;
+    border:1px solid red;
+}

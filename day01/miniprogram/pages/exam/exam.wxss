@@ -1,0 +1,47 @@
+/* pages/exam/exam.wxss */
+.father{
+    display: flex;
+    flex-direction: column;
+}
+.son{
+    width:100rpx;
+    height: 100rpx;
+    border:1px solid #f00;
+}
+/*居中练习*/
+.f2{
+   width:300rpx;/*单位都是用rpx的哦*/
+   height: 300rpx;
+   border:1px solid red;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.s2{
+    width:100rpx;
+    height: 100rpx;
+    background-color: #0f0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,6 @@
+.admin{
+  font-size: 30px;
+  color:red;
+  border:1px solid blue;
+}
+

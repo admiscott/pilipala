@@ -1,0 +1,47 @@
+<!--pages/exam03/exam03.wxml-->
+<view>
+<!--电影图片-->
+    <view class='detail-container' style="background:url({{detail.images.large}})no-repeat top"></view>
+  <view class='detail-mask'></view>
+    <!--电影介绍-->
+<view class='detail-info'>
+<image src='{{detail.images.large}}' class='detail-img'></image>
+  <view class='detail'>
+<!--右侧：电影标题-->
+    <view class='detail-nm'>{{detail.title}}</view>
+<!--右侧：电影原标题-->
+    <view>{{detail.original_title}}</view>
+<!--右侧：电影评分-->
+    <view class='detail-sc'>{{detail.rating.average}}分</view>
+    <view>{{detail.countries}}</view>
+<!--右侧：电影导影-->
+    <view>导演:{{detail.directors[0].name}}</view>
+  </view>
+</view>
+<view class='desc'>{{detail.summary}}</view>
+
+
+<van-cell-group>
+  <van-field
+    value="{{ content }}"
+    placeholder="写点评价吧"
+    border="{{ false }}"
+    bind:change="onContentChange"
+  />
+</van-cell-group>
+
+<van-rate value="{{ score }}" bind:change="onScoreChange" size="30" />
+<view>
+ <van-button type="warning" bindtap="uploadImg">上传图片</van-button>
+</view>
+<view wx:if="{{xianshi}}" style="color:#0ff">图片预览：</view>
+<view>
+  <image class='common-img' wx:for="{{images}}" wx:key="{{index}}" src="{{item}}"></image>
+</view>
+<view>
+<van-button type="danger" size="large" bindtap="submit">提交评价</van-button>
+</view>
+
+
+</view>
+

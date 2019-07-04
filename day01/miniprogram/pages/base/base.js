@@ -1,0 +1,83 @@
+// pages/base/base.js
+Page({
+   /**
+   * 页面的初始数据
+   */
+  data: {
+      msg:"hello",
+      num1:10,
+      bool1:true,
+      age:20,
+      list:[
+        {id:1,name:"东东"},
+        {id:2,name:"化化"}
+      ]
+  },
+  handle1(){
+      console.log("我是儿啊")
+  },
+  handle2(){
+      console.log("我是爹啊")
+  },
+  handle3(){
+    console.log("非冒泡的保保")
+  },
+  handle4(){
+    console.log("非冒牌的价格父元素")
+  },
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad: function (options) {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面初次渲染完成
+   */
+  onReady: function () {
+      
+  },
+
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow: function () {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面隐藏
+   */
+  onHide: function () {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面卸载
+   */
+  onUnload: function () {
+
+  },
+
+  /**
+   * 页面相关事件处理函数--监听用户下拉动作
+   */
+  onPullDownRefresh: function () {
+
+  },
+
+  /**
+   * 页面上拉触底事件的处理函数
+   */
+  onReachBottom: function () {
+
+  },
+
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage: function () {
+
+  }
+})

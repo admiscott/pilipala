@@ -1,0 +1,37 @@
+<!--pages/mymovie/mymovie.wxml-->
+<view class='movielist'>
+</view>
+<view class='upload'>
+<!--输入框-->
+  <van-field
+    value="{{ content }}"
+    placeholder="写点感想吧"
+    border="{{ false }}"
+    bind:change="onContentChange"
+  />
+  <view >
+    <image class="common-img" src="{{image}}" >
+    </image>
+  </view>
+<van-button type="primary" size="large" bindtap="upload" custom-class="btn-uploada">上传图片</van-button>
+<van-button type="danger" size="large" bindtap="submit">提交</van-button>
+
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

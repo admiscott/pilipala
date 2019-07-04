@@ -1,0 +1,61 @@
+<!--pages/base/base.wxml-->
+<text>pages/base/base.wxml</text>
+<text selectable='true' class='admin'>微信小程序</text>
+<view class='container'>
+  <view>轻量级的APP</view>
+  <view>降低开发成本</view>
+  <view>显示数据</view>
+  <view>{{msg}}</view>
+  <view wx:for="{{list}}" wx:key="index">{{item.name}}</view>
+  <view>判断条件</view>
+  <view wx:if="{{list.length>0}}">当前数组长度大于0</view>
+  <view>多个判断条件</view>
+  <view wx:if="{{age<12}}">少年</view>
+  <view wx:elif="{{age<21}}">青少年</view>
+  <view wx:else>上班狗</view>
+  <view>隐藏</view>
+  <view hidden="{{age==20}}">我在新加坡</view>
+</view>
+<view>事件绑定方式</view>
+<view>支持冒泡</view>
+<view bindtap='handle2'>
+   父亲
+  <view bindtap='handle1'>儿啊</view>
+   
+</view>
+<view>不支持冒泡</view>
+<view catchtap='handle4'>
+    父元素是的
+   <view catchtap='handle3'>子元素啊</view>
+</view> 
+
+<view>
+  <image src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3300305952,1328708913&fm=27&gp=0.jpg" lazy-load='true'></image>
+</view>
+<view>移动端事件</view>
+<view class='box' >
+
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

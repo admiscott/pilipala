@@ -1,0 +1,9 @@
+{
+  "usingComponents": {},
+  "navigationBarBackgroundColor": "#986387",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "腾讯地图实例",
+  "backgroundColor": "#eee",
+  "navigationStyle": "default",
+  "backgroundTextStyle": "light"
+}

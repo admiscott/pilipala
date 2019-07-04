@@ -1,0 +1,53 @@
+/* pages/exam01/exam01.wxss */
+/*一部电影区域*/
+.movie{
+  display: flex;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+/*一部电影的图片*/
+.movie-img{
+    width:200rpx;
+    height: 300rpx;
+    margin-right: 20rpx;
+    margin-top: 20rpx;
+}
+/*一部电影介绍*/
+.movie-info{
+    flex: 1;/*将右侧区域分配给Info介绍*/
+    font-size: 28rpx;
+    line-height: 1.8;/*行高*/
+}
+/*一部电影的标题*/
+.movie-title{
+  color:#666;/*文字的颜色*/
+  font-size: 40rpx;/*文字的大小*/
+  font-weight: bolder;/*加粗*/
+}
+/*一部电影的评分*/
+.movie-score{
+  color:#faaf00;
+}
+/*一部电影的详情按钮*/
+.movie-comment{
+  height: 70rpx;/*按钮的高度*/
+  background-color: #e54847;
+  color:#fff;
+  font-size: 26rpx;
+  margin-top: 0rpx;/*与文字的间距*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

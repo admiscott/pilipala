@@ -1,0 +1,60 @@
+{
+  "pages": [ 
+    "pages/mymovie/mymovie",
+    "pages/clouds/clouds",
+    "pages/exam01/exam01",
+    "pages/exam02/exam02",
+    "pages/exam03/exam03",
+    "pages/base/base",
+    "pages/exam/exam",
+    "pages/profile/profile",
+    "pages/cloud/cloud",
+    "pages/menu/menu"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#0ff",
+    "navigationBarTitleText": "电影娱乐模块",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh":true
+  },
+  "tabBar": {
+    "color": "#0ff",
+    "selectedColor": "#F00",
+    
+    "list": [
+      {
+        "pagePath": "pages/base/base",
+        "text": "基础",
+        "iconPath": "images/05.png",
+        "selectedIconPath": "images/01.png"
+      },
+      {
+        "pagePath": "pages/exam/exam",
+        "text": "练习",
+        "iconPath": "images/06.png",
+        "selectedIconPath": "images/02.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "个人中心",
+        "iconPath": "images/07.png",
+        "selectedIconPath": "images/03.png"
+      },
+      {
+        "pagePath": "pages/cloud/cloud",
+        "text": "云服务",
+        "iconPath": "images/08.png",
+        "selectedIconPath": "images/04.png"
+      },
+      {
+        "pagePath": "pages/menu/menu",
+        "text": "商品",
+        "iconPath": "images/09.png",
+        "selectedIconPath": "images/10.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

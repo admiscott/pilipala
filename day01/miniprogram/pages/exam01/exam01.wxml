@@ -1,0 +1,43 @@
+<!--pages/exam01/exam01.wxml-->
+
+<button bindtap="tiao">点我跳一跳</button>
+<!--一部电影的区域-->
+<view class="movie" wx:for="{{list}}" wx:key="{{index}}">
+  <image class="movie-img" src="{{item.images.small}}"></image>
+  <!--电影介绍-->
+  <view class="movie-info">
+  <!--电影标题-->
+  <view class='movie-title'>{{item.title}}</view>
+  <!--电影类型-->
+  <view>类型：
+    <text wx:for="{{item.genres}}">  {{item}}</text>
+  </view>
+  <!--观众评分-->
+  <view>观众评分:
+      <text class='movie-score'>{{item.rating.average}}分</text>
+  </view>
+  <!--主演：多位-->
+  <view>主演:
+     <text wx:for="{{item.casts}}" wx:key="{{index}}">  {{item.name}}</text>
+  </view>
+  <!--年份-->
+  <view>年份:{{item.year}}  时长:{{item.durations[0]}}</view>
+  <!--详情按钮-->
+  <button data-movieid="{{item.id}}" class='movie-comment' catchtap='xqing'>评价</button>
+  </view>    
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

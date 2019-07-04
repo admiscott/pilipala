@@ -1,0 +1,72 @@
+<!--pages/clouds/clouds.wxml-->
+<view>云数据库</view>
+<button bindtap='insert'>添加数据</button>
+<button bindtap='update'>更新数据</button>
+<button bindtap='del'>删除数据</button>
+<button bindtap='select'>查询数据</button>
+<button bindtap='add'>集合添加tom</button>
+<button bindtap='upp'>集合修改记录</button>
+<button bindtap='search'>查询集合的记录并显示</button>
+<button bindtap='diao'>跳啊跳啊不能跳tarbar哦</button>
+<button bindtap='tarbaba'>我要跳到tarbar里了</button>
+<view wx:for="{{list}}" wx:key="index">
+    <text>{{item.name}}</text>
+    <text bindtap='deletes' data-id="{{item._id}}">删除</text><!--拿id去删当前的数据第3步-->
+</view>
+<view>云函数</view>
+<view bindtap="handleSuma">调用sumss啊草</view>
+<view>调用login函数</view>
+<view bindtap='handlelogin'>获取登录用户openid</view>
+<button bindtap='handleDel'>批量删除数据</button>
+<view>云存储</view>
+<button bindtap='upload'>上传图片</button>
+<button bindtap='getImage'>展示图片</button>
+<view>云存储的练习</view>
+<view>上传文件并且保存到myphoto集合中</view>
+<button bindtap='myupload'>上传到集合中</button>
+<button bindtap='myImage'>展示图片集合</button>
+<block wx:for='{{rows}}' wx:key='index'><!--block就是用来做循环用啥也不干了-->
+  <image src='{{item.fileID}}'></image>
+  <view bindtap='deltup' data-id="{{item._id}}">删除图片</view>
+</block>
+
+<van-button type="default">默认按钮</van-button>
+<van-button type="primary">主要按钮</van-button>
+<van-button type="info">信息按钮</van-button>
+<van-button type="warning">警告按钮</van-button>
+<van-button type="danger">危险按钮</van-button>
+<van-button plain type="primary">朴素按钮</van-button>
+<van-button plain type="danger">朴素按钮</van-button>
+<van-button plain hairline type="primary">细边框按钮</van-button>
+<van-button plain hairline type="danger">细边框按钮</van-button>
+<van-button square type="primary">方形按钮</van-button>
+<van-button round type="danger">圆形按钮</van-button>
+<van-button size="large" type="info">大号按钮</van-button>
+<van-button size="normal" type="primary">普通按钮</van-button>
+<van-button size="small" type="danger">小型按钮</van-button>
+<van-button size="mini" type="warning">迷你按钮</van-button>
+<van-button loading type="primary" />
+<van-button loading type="danger" loading-text="加载中..." />
+
+<van-icon name="chat" info="9" />
+<van-icon name="chat" info="99+" />
+<van-icon name="close" />
+<van-icon name="https://b.yzcdn.cn/vant/icon-demo-1126.png" />
+<van-icon name="fire-o" />
+<van-icon name="shopping-cart-o" />
+<!--折叠面板-->
+<van-collapse value="{{ activeNames }}" bind:change="onChange">
+  <van-collapse-item title="有赞微商城" name="1">
+    提供多样店铺模板，快速搭建网上商城
+  </van-collapse-item>
+  <van-collapse-item title="有赞零售" name="2">
+    网店吸粉获客、会员分层营销、一机多种收款，告别经营低效和客户流失
+  </van-collapse-item>
+  <van-collapse-item title="有赞美业" name="3" disabled>
+    线上拓客，随时预约，贴心顺手的开单收银
+  </van-collapse-item>
+</van-collapse>
+
+
+
+

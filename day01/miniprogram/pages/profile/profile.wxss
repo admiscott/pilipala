@@ -1,0 +1,28 @@
+/* pages/profile/profile.wxss */
+.tou{
+  width:200rpx;
+  height: 200rpx;
+  border-radius:50%;
+  display: block;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-top: 10rpx;
+}
+.profile{
+  border-top:1rpx solid #f00;
+  text-align: center;
+  background-color:#296;
+  opacity: 0.8;
+  color:#fff; 
+}
+
+
+
+
+
+
+
+
+
+
+

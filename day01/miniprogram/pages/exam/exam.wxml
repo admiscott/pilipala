@@ -1,0 +1,26 @@
+<!--pages/exam/exam.wxml-->
+<text>pages/exam/exam.wxml</text>
+<view>移动端样式布局一</view>
+<view class="father">
+  <view class="son"></view>
+  <view class="son"></view>      
+  <view class="son"></view>
+</view>
+<view>移动端的样式布局二</view>
+<view class='f2'>
+  <view class='s2'></view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
